@@ -1,0 +1,50 @@
+{
+  "name": "task-lesson-19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . && prettier --check .",
+    "lint:fix": "eslint . --fix && prettier --write . ",
+    "prepare": "husky install",
+    "build": "webpack --node-env production",
+    "dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roman-Likhomanov/task-lesson-19.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roman-Likhomanov/task-lesson-19/issues"
+  },
+  "homepage": "https://github.com/Roman-Likhomanov/task-lesson-19#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "lodash": "^4.17.21",
+    "mrm": "^3.0.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@types/jest": "^27.0.2",
+    "babel-jest": "^27.2.5",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.1",
+    "eslint-plugin-jest": "^25.0.5",
+    "husky": "^7.0.2",
+    "jest": "^27.2.5",
+    "lint-staged": "^11.2.3",
+    "prettier": "2.4.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,css,md,json,yml,html}": "prettier --write"
+  }
+}
